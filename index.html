@@ -1,81 +1,104 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
-  
+<html class="page" lang="ru">
+
 <head>
     <meta charset="utf-8">
-    
+
 <title>HTML Academy: Седона</title>
-  
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
-  
+
 <body>
-    <header>
-<nav>
-    <ul>
+<div>
+    <header class="main-header">
+<nav class="main-navigation">
+     <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="price.html">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
-  
-</nav>
-  </header>
+  </nav>
+  <div class="header-logo">
+    <a>
+ <img src=img/logo.png width=138 height=70 alt="Логотип">
+</a>
+    </div>
+</div>
+  <a class="main-header-logo"></a>
+ <img src=img/backgroundphoto.jpg width=1200 height=509 alt="Логотип">
+</header>
+  <section>
+    <!--буквы на фоне-->
+    </section>
   <main>
-      <section>
-      <h2>
+      <section class="description-main">
+        <div class="description-text">
+           <h2>
           Седона-небольшой городок в аризоне, <br>
           заслуживающий большего!
         </h2>
         <p>
 Рассмотрим 5 причин, по которым седона круче чем гранд каньон!
         </p>
+        </div>
        </section>
 
-       <section>
-<h2>
-    Настоящий<br> 
+       <section class="features-left">
+<div class="features-fon-left">
+          <h2>Настоящий<br>
     городок
     </h2>
     <p>
         — №1 —
     </p>
 <p>
-    Седона - не аттракцион для туристов,<br> 
-    там течёт своя жизнь    
+    Седона - не аттракцион для туристов,<br>
+    там течёт своя жизнь
 </p>
+</div>
     </section>
 
     <section>
-       <p>картинка с флагом</p>
+      <a class="Flag"></a>
+      <img src=img/image.jpg width=800 height=256 alt="Флаг">
     </section>
-        
+
     <section>
-            <h2>
-                Что у нас есть
-                </h2>
-                <ul>
-                    <li>
-                        <h2>Жилье</h2>
+      <div  class="icon">
+            <h2 hidden>Что у нас есть</h2>
+                <ul class="icon-list">
+                    <li class="icon-item">
+                      <img src=img/icon-1.svg width=75 height=72 alt="Жильё">
+                      <h2>Жилье</h2>
                         <p>Жильё Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                    </li>
+                      </li>
                     <li>
+                      <img src=img/icon-2.svg width=75 height=72 alt="Еда">
                         <h2>Еда</h2>
                         <p>Еда Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </li>
                     <li>
+                      <img src=img/icon-3.svg width=75 height=72 alt="Сувениры">
                         <h2>Сувениры</h2>
                         <p>Сувениры Не только китайского, но и местного производства!</p>
                     </li>
                 </ul>
-    </section>
-    
+    </div>
+              </section>
+
     <section>
-        <p>картинка с горой</p>
+      <a class="mountain"></a>
+      <img src=img/image1.jpg width=800 height=256 alt="Гора">
     </section>
-    
-    <section>
-        <h2>
-            Там есть<br> 
+
+    <section class="features-right">
+      <div class="features-fon-right">
+      <h2>
+            Там есть<br>
             Мост дьявола
             </h2>
             <p>
@@ -83,16 +106,15 @@
             </p>
         <p>
             Да, по нему можно пройти! Если конечно<br>
-            вы осмелитесь 
+            вы осмелитесь
         </p>
+        </div>
     </section>
 
-    <section>
-        <h2>
-            Что посетить
-            </h2>
-            <ul>
-                <li>
+    <section class="noicon">
+        <h2 hidden>Что посетить</h2>
+            <ul class="noicon-list">
+                <li class="noicon-item">
                     <h2>Небольшая площадь</h2>
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
@@ -105,53 +127,51 @@
                     <p>Большинство едет в гранд каньон и толпится там </p>
                 </li>
             </ul>
-    </section>  
-    <section>
-        <h1>Заинтересовались?</h1>>
+    </section>
+    <section class="offer">
+        <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшее предложение гостиниц с Седоне
-        </p>
+        <a href="#">Посик Гостиницы в Седоне</a><!--ссылка на выплывающее окно-->
+    </p>
 
-    </section>>   
+    </section>
 </main>
 <footer>
-    <section>
-      <h2>#visitsedona</h2>
+    <section class="contacts">
+      <p>#visitsedona</p>
       <h2>ТЕЛ: +7(495) 666-01-66>
     </section>
-    <section>
+    <section class="footer-social">
          <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-button" href="#">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
         <p>
-      Разработано:
-      <a href="https://htmlacademy.ru">HTML Academy</a>
+          Website by:
+      <a class="footer-copyright" href="https://htmlacademy.ru"></a>  <img src=img/logo-htmlacademy.svg width=115 height=41 alt="HTML Лого">
     </p>
 </section>
-<section>
+</footer>
+<!--<section class="modal modal-in">
     <h2>Поиск гостиницы в седоне</h2>
-    <label for="date">Дата заезда</label>
-    <input type="date" name="date"><br>
-    <label for="date1">Дата выезда</label>
-    <input type="date1" name="date1"><br>
+    <label for="datein">Дата заезда</label>
+    <input type="date" name="datein"><br>
+    <label for="dateout">Дата выезда</label>
+    <input type="date" name="dateout"><br>
     <label for="number">Взрослые:</label>
-    <div class="number">
-        <span class="minus">-</span>
-        <input type="text" value="1"/> сдела 2 разных варианта. этот нашел. тут немного не понял как можно сделать.
-        <span class="plus">+</span>
-    </div>
-    <label for="number1">Дети:</label> этот с уроков
-    <input type="number1" value="1"/>
+    <input type="number" name="adult" value="1"><br>
+    <label for="number">Дети:</label>
+    <input type="number" name="children" value="1"/>
     </section>
-  </footer>
+  -->
 
 </body>
 

@@ -1,0 +1,131 @@
+/*@font-face
+{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans'),
+  url(../fonts/ptsans.woff2) format('woff2'),
+  url(../fonts/ptsans.woff) format('woff');
+}
+@font-face
+{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans'), local('PTSans'),
+  url(../fonts/ptsans.woff2) format('woff2'),
+  url(../fonts/ptsans.woff) format('woff');
+}
+*/
+:root {
+  --basic-red: #FF0000;
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-white: #ffffff;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD;
+  --basic-light-grey: #CACACA;
+  --basic-grey: #A9A9A9;
+  --basic-dark-grey: #666666;
+
+  --special-black: #231F20;
+}
+
+body
+{
+  min-width: 1200px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("/img/backgroundphoto.jpg");
+
+}
+
+.site-navigation
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container
+{
+  position: absolute;
+  width: 470px;
+  height: 80px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.description-main
+{
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+}
+
+.description-text
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.features-left
+{
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+}
+.features-fon-left
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.features-right
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.features-fon-right
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.rectangle
+{
+  width: 400px;
+  height: 256px;
+  background: var(--basic-light-blue)
+}
+

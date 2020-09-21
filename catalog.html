@@ -1,114 +1,133 @@
 <!DOCTYPE html>
-<html lang="ru">
-  
+<html class="page" lang="ru">
+
 <head>
     <meta charset="utf-8">
-    
+
 <title>HTML Academy: Седона</title>
-  
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
-  
-<body>
+
+<body class="page-body inner-page">
     <header>
-<nav>
-    <ul>
+<nav class="main-header">
+    <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="price.html">Карта штата</a></li>
         <li><a>Гостиницы</a></li>
     </ul>
+    <div class="header-logo">
+      <a>
+   <img src=img/logo.png width=138 height=70 alt="Логотип">
+  </a>
+      </div>
+    </div>
+    <a class="filtr"></a>
+   <img src=img/background.jpg width=1200 height=217 alt="Фильтр">
     <main>
-        <section>
-    <h3>Инфраструктура:</h3>
-    <label>
-        <input type="radio" name="question-one" value="p"> Бассейн<br>
-        <input type="radio" name="question-two" value="p"> Парковка<br>
-        <input type="radio" name="question-three" value="p"> Wi-Fi<br>
-</label>
-
-<!--не могу понять почему не выделяются все галочки. как сделать галочки? попробовало через радио кнопки-->
-<label>
+        <section class="checkbox">
+    <div>
+          <h3>Инфраструктура:</h3>
+            <input type="checkbox" name="question-one" value="Бассейн" id="checkbox01">
+        <label for="checkbox01">Бассейн</label>
+        <input type="checkbox" name="question-one" value="Парковка" id="checkbox02">
+        <label for="checkbox02">Парковка</label>
+        <input type="checkbox" name="question-one" value="Wi-Fi" id="checkbox03">
+        <label for="checkbox03">Wi-Fi</label>
+        </div>
+        <div>
         <h3>Тип жилья: </h3>
-        <input type="radio" name="question-one" value="p"> Гостиница<br>
-        <input type="radio" name="question-two" value="p"> Мотель<br>
-        <input type="radio" name="question-three" value="p"> Апартаменты<br>
-        </label>
+
+        <input type="checkbox" name="question-one" value="Гостиница" id="checkbox04">
+        <label for="checkbox04">Гостиница</label>
+        <input type="checkbox" name="question-one" value="Мотель" id="checkbox05">
+        <label for="checkbox05">Мотель</label>
+        <input type="checkbox" name="question-one" value="Апартаменты" id="checkbox06">
+        <label for="checkbox06">Апартаменты</label>
+        </div>
         <div class="half-width">
-            <label for="moneycount">Стоймость в сутки (Р):</label> <!--как тут сделать немного не понял если есть какой то код подскажите как называется как форомить найду-->
-            0 <input type="range" id="moneycount" name="moneycount" min="0" max="3000"> 3000 
+            <label for="moneycount">Стоймость в сутки (Р):</label>
+            0 <input type="range" id="moneycount" name="moneycount" min="0" max="3000"> 3000
           </div>
     </section>
     <section>
-        <h2>Гостиницы</h2>
+        <h2 hidden>Гостиницы</h2>
         <!-- Здесь будет форма фильтра -->
         </section>
-        <section>
-            <h2>Список Гостиниц</h2>
-            <ul>
+        <section class="hotel">
+            <h2 class=catalog-list>Список Гостиниц</h2>
+            <ul class="catalog-hotel">
                 <li>
-                    <a href="#"><!-- Скорее всего нужна ссылка на пустую страницу-->
-                        <h3>Amara Resort & Spa</h3>
+                    <p class="hotel-image">
+                        <img src=img/amara.png width=135 height=90 alt="Amara Resort & Spa">
+                    <a href="#">
+                        <h3 class="hotel-name">Amara Resort & Spa</h3>
                     </a>
-                        <p> гостиница </p>
-                        <p>от 4000 Р.</p>
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                         <!-- Как проставить зведы не знаю-->
-                        <p>Рейтинг: 8,5</p>
-                
+                        <p class="catalog-category"> гостиница </p>
+                        <p class="hotel-price">от 4000 Р.</p>
+                        <a class="button-more" href="#">Подробнее</a>
+                        <a class="button-reservation" href="#">Забронировать</a>
+                        <p class="rating">Рейтинг: 8,5</p>
+
                 </li>
                 <li>
-                    <a href="#"><!-- Скорее всего нужна ссылка на пустую страницу-->
-                        <h3>Desert Quail Inn</h3>
+                    <p class="hotel-image">
+                      <img src=img/desert.png width=135 height=90 alt="Desert Quail Inn">
+                    <a href="#">
+                        <h3 class="hotel-name">Desert Quail Inn</h3>
                     </a>
-                        <p> Мотель </p>
-                        <p>от 3000 Р.</p>
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                         <!-- Как проставить зведы не знаю-->
-                        <p>Рейтинг: 8,9</p>
-               
+                        <p class="catalog-category"> Мотель </p>
+                        <p class="hotel-price">от 3000 Р.</p>
+                        <a class="button-more" href="#">Подробнее</a>
+                        <a class="button-reservation" href="#">Забронировать</a>
+                        <p class="rating">Рейтинг: 8,9</p>
+
                 </li>
                 <li>
-                    <a href="#"><!-- Скорее всего нужна ссылка на пустую страницу-->
-                        <h3>Villas at Poco Diablo</h3>
+                    <p class="hotel-image">
+                      <img src=img/villas.png width=135 height=90 alt="Villas at Poco Diablo">
+                    <a href="#">
+                        <h3 class="hotel-name">Villas at Poco Diablo</h3>
                     </a>
-                        <p> Апартаменты</p>
-                        <p>от 2000 Р.</p>
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                         <!-- Как проставить зведы не знаю-->
-                        <p>Рейтинг: 9.2</p>
-               
+                        <p class="catalog-category"> Апартаменты</p>
+                        <p class="hotel-price">от 2000 Р.</p>
+                        <a class="button-more" href="#">Подробнее</a>
+                        <a class="button-reservation" href="#">Забронировать</a>
+                        <p class="rating">Рейтинг: 9.2</p>
+
                 </li>
 
               </ul>
-          
-            
+
+
           </section>
-        
-       </main> 
+
+       </main>
     <footer>
-        <section>
-          <h2>#visitsedona</h2>
-          <h2>ТЕЛ: +7(495) 666-01-66>
-        </section>
-        <section>
-             <ul>
-            <li>
-              <a href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a href="#">Инстаграм</a>
-            </li>
-          </ul>
-            <p>
-          Разработано:
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
-    </section>
+        <section class="contacts">
+            <p>#visitsedona</p>
+            <h2>ТЕЛ: +7(495) 666-01-66>
+          </section>
+          <section class="footer-social">
+               <ul>
+              <li>
+                <a class="social-button" href="#">Вконтакте</a>
+              </li>
+              <li>
+                <a class="social-button" href="#">Фейсбук</a>
+              </li>
+              <li>
+                <a class="social-button" href="#">Инстаграм</a>
+              </li>
+            </ul>
+              <p>
+                Website by:
+            <a class="footer-copyright" href="https://htmlacademy.ru"></a> <img src=img/logo-htmlacademy.svg width=115 height=41 alt="HTML Лого">
+          </p>
+      </section>
 </footer>
 >
