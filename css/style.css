@@ -1,4 +1,4 @@
-/*@font-face
+@font-face
 {
   font-family: 'PT Sans';
   font-style: normal;
@@ -16,7 +16,6 @@
   url(../fonts/ptsans.woff2) format('woff2'),
   url(../fonts/ptsans.woff) format('woff');
 }
-*/
 :root {
   --basic-red: #FF0000;
   --basic-black: #000000;
@@ -51,7 +50,6 @@ body
 
 .site-navigation
 {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -66,7 +64,6 @@ body
   position: absolute;
   width: 470px;
   height: 80px;
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -75,7 +72,7 @@ body
 
 .description-main
 {
-  font-family: PT Sans;
+
 font-style: normal;
 font-weight: bold;
 font-size: 21px;
@@ -84,15 +81,14 @@ line-height: 26px;
 
 .description-text
 {
-  font-family: PT Sans;
+
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
 }
 .features-left
 {
-  font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 21px;
@@ -100,7 +96,6 @@ line-height: 26px;
 }
 .features-fon-left
 {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -108,7 +103,6 @@ line-height: 26px;
 }
 .features-right
 {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -116,7 +110,6 @@ line-height: 26px;
 }
 .features-fon-right
 {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -129,3 +122,41 @@ line-height: 26px;
   background: var(--basic-light-blue)
 }
 
+.filtr
+{
+  background-image: url("img/background.jpg");
+  width: 1200 ;
+  height: 217 ;
+}
+
+.fmain-header-logo
+{
+  background-image: url("img/backgroundphoto.jpg");
+  width: 1200 ;
+  height: 509 ;
+}
+.button-more
+{
+  width: 110px;
+  height: 27px;
+  background: var(--basic-light-blue);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-align:  center;
+}
+
+.button-reservation
+{
+  width: 142px;
+  height: 27px;
+  background: var(--basic-light-brown);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-align:  center;
+}
