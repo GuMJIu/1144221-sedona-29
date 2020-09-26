@@ -94,7 +94,7 @@ v
 .main-navigation-wrapper
 {
   display: grid;
-  grid-template-columns: fr min-content;
+  grid-template-columns: 1fr min-content;
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
@@ -165,39 +165,51 @@ v
   background-image: url('../img/backgroundphoto.jpg');
   width: 1200px;
   height: 509px;
+}
+
+.main-text-logo
+{
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+    left: 411.38px;
+    top: 132.35px;
+}
+
+.features
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgb(255, 217, 0);
+  outline-offset: -5px;
+
 
 }
 
-.features-one
+/*.features-reverse
+{
+  display: flex;
+  float: left;
+}
+*/
+.advantages
 {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
   margin: 0;
   padding: 0;
 }
-
-.features-two
+/*.list
 {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  margin: 0;
-  padding: 0;
-
-}
-.icon-list
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
+    margin: 0;
   padding: 0;
 }
-.noicon-list
+*/
+.item
 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 0
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
 }
 .button-more
 {
