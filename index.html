@@ -30,16 +30,19 @@
     </div>
 </div>
 </header>
-  <div class="main-text-logo main-header-logo">
-    <a>
-      <img src="img/welcome.png"  width=456.65px height=350.88px alt="Тескт фон">
-      </a>
-  </div>
+  <section class="main-header-logo">
+       <div>
+      <img class="main-text-logo" src="img/welcome.png"  width=456.65px height=350.88px alt="Тескт фон">
+      </div>
+      <div>
+      <img class="" src="img/Shape.svg" width=1200px height=57px alt="треугольник">
+      </div>
+  </section>
   <main>
-      <section class="description-main">
+      <section class="description-main description-fon">
         <div class="description-text">
            <h2>
-          Седона-небольшой городок в аризоне, <br>
+          Седона — небольшой городок в аризоне, <br>
           заслуживающий большего!
         </h2>
         <p>
@@ -133,39 +136,68 @@
             </ul>
     </section>
     </div>
-    <section class="offer">
+    <div class="offer">
         <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшее предложение гостиниц с Седоне
-        <a href="#">Посик Гостиницы в Седоне</a><!--ссылка на выплывающее окно-->
+        и мы покажем вам лучшее предложение гостиниц с Седоне<br>
+        <a class="search" href="#">Поиск Гостиницы в Седоне</a><!--ссылка на выплывающее окно-->
     </p>
+    </div>
+    <div class="map">
 
-    </section>
+    </div>
 </main>
 <footer class="main-footer">
-    <section class="contacts">
+    <div class="contacts">
       <p>#visitsedona</p>
       <h2>ТЕЛ: +7(495) 666-01-66
-    </section>
-    <section class="footer-social">
+    </div>
+    <div class="footer-social">
          <ul>
         <li>
-          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z" fill="white"/>
+              </svg>
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+              </svg>
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">YouTube</span>
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+              </svg>
+          </a>
         </li>
       </ul>
-        <section>
-          Website by:
-      <a class="footer-copyright" href="https://htmlacademy.ru"></a>  <img src=img/logo-htmlacademy.svg width=115 height=41 alt="HTML Лого">
-        </section>
-</section>
+    </div>
+    <div>
+      Website by:
+      <a class="footer-copyright" href="https://htmlacademy.ru">
+      <img src="img/logo-htmlacademy.svg" width=115 height=41 alt="HTML Лого"></a>
+        </div>
 </footer>
 
+<section class="modal modal-in">
+    <h2>Поиск гостиницы в седоне</h2>
+    <label for="datein">Дата заезда</label>
+    <input type="date" name="datein"><br>
+    <label for="dateout">Дата выезда</label>
+    <input type="date" name="dateout"><br>
+    <label for="number">Взрослые:</label>
+    <input type="number" name="adult" value="1"><br>
+    <label for="number">Дети:</label>
+    <input type="number" name="children" value="1"/>
+    </section>
 </body>
 
 
