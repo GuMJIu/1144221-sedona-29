@@ -11,7 +11,7 @@
 </head>
 
 <body class="page-body">
-<div>
+<div class="container">
     <header class="main-header">
 <nav class="main-navigation">
   <div class="main-navigation-wrapper">
@@ -28,7 +28,6 @@
 <img src=img/logo.png width=138 height=70 alt="Логотип">
 </a>
     </div>
-</div>
 </header>
   <section class="main-header-logo">
        <div>
@@ -122,16 +121,19 @@
         <h2 hidden>Что посетить</h2>
             <ul class="list-small">
                 <li class="item-small">
-                    <h2>Небольшая площадь</h2>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <h2>Небольшая<br> площадь</h2>
+                    <p>— №3 —</p>
+                    <p>Все достопримечательности<br> находятся очень близко</p>
                 </li>
                 <li class="item-small">
-                    <h2>Красивая дорога</h2>
-                    <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <h2>Красивая<br> дорога</h2>
+                    <p>— №4 —</p>
+                    <p>Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
                 </li>
                 <li class="item-small">
-                    <h2>Мало туристов</h2>
-                    <p>Большинство едет в гранд каньон и толпится там </p>
+                    <h2>Мало<br> туристов</h2>
+                    <p>— №5 —</p>
+                    <p>Большинство едет в гранд каньон<br> и толпится там </p>
                 </li>
             </ul>
     </section>
@@ -141,7 +143,17 @@
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшее предложение гостиниц с Седоне<br>
         <a class="search" href="#">Поиск Гостиницы в Седоне</a><!--ссылка на выплывающее окно-->
-    </p>
+        <section class="modal modal-in">
+          <label for="datein">Дата заезда</label>
+          <input type="date" name="datein"><br>
+          <label for="dateout">Дата выезда</label>
+          <input type="date" name="dateout"><br>
+          <label for="number">Взрослые:</label>
+          <input type="number" name="adult" value="1"><br>
+          <label for="number">Дети:</label>
+          <input type="number" name="children" value="1"/>
+          </section>
+      </p>
     </div>
     <div class="map">
 
@@ -150,7 +162,7 @@
 <footer class="main-footer">
     <div class="contacts">
       <p>#visitsedona</p>
-      <h2>ТЕЛ: +7(495) 666-01-66
+      <h2>ТЕЛ: +7(495) 666-01-66</h2>
     </div>
     <div class="footer-social">
          <ul>
@@ -180,24 +192,14 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="copyright">
       Website by:
       <a class="footer-copyright" href="https://htmlacademy.ru">
       <img src="img/logo-htmlacademy.svg" width=115 height=41 alt="HTML Лого"></a>
         </div>
 </footer>
+</div>
 
-<section class="modal modal-in">
-    <h2>Поиск гостиницы в седоне</h2>
-    <label for="datein">Дата заезда</label>
-    <input type="date" name="datein"><br>
-    <label for="dateout">Дата выезда</label>
-    <input type="date" name="dateout"><br>
-    <label for="number">Взрослые:</label>
-    <input type="number" name="adult" value="1"><br>
-    <label for="number">Дети:</label>
-    <input type="number" name="children" value="1"/>
-    </section>
 </body>
 
 
