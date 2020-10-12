@@ -12,6 +12,7 @@
 </head>
 
 <body class="page-body inner-page">
+  <div class="container">
     <header>
 <nav class="main-header">
     <ul class="site-navigation">
@@ -23,34 +24,64 @@
 
     <div class="header-logo">
       <a>
-   <img src=img/logo.png width=138 height=70 alt="Логотип">
+   <img src="img/logo.png" width="138" height="70" alt="Логотип">
   </a>
       </div>
     </nav>
+    </header>
        <main>
-        <section class="filtr checkbox">
-    <div>
-          <h3>Инфраструктура:</h3>
-            <input type="checkbox" name="question-one" value="Бассейн" id="checkbox01">
-        <label for="checkbox01">Бассейн</label>
-        <input type="checkbox" name="question-one" value="Парковка" id="checkbox02">
-        <label for="checkbox02">Парковка</label>
-        <input type="checkbox" name="question-one" value="Wi-Fi" id="checkbox03">
-        <label for="checkbox03">Wi-Fi</label>
+        <section class="choice">
+          <form class="choice-form" action="#" method="GET">
+    <div class="Infrastructure">
+        <h3>Инфраструктура:</h3>
+          <ul class="filter-chech">
+        <li>
+        <input class="filter-input-checkbox" type="checkbox" name="Бассейн" id="Pool">
+          <label for="Pool">Бассейн</label>
+        </li>
+        <li>
+        <input class="filter-input-checkbox" type="checkbox" name="Парковка" id="Parking">
+          <label for="Parking">Парковка</label>
+        </li>
+        <li>
+        <input class="filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+          <label for="Wi-Fi">Wi-Fi</label>
+        </li>
+        </ul>
         </div>
-        <div>
+        <div class="Type-of-housing">
         <h3>Тип жилья: </h3>
-
-        <input type="checkbox" name="question-one" value="Гостиница" id="checkbox04">
-        <label for="checkbox04">Гостиница</label>
-        <input type="checkbox" name="question-one" value="Мотель" id="checkbox05">
-        <label for="checkbox05">Мотель</label>
-        <input type="checkbox" name="question-one" value="Апартаменты" id="checkbox06">
-        <label for="checkbox06">Апартаменты</label>
+        <ul>
+          <li>
+        <input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel">
+        <label for="hotel">Гостиница</label>
+        </li>
+        <li>
+        <input class="filter-input-checkbox" type="checkbox" name="Motel" id="Motel">
+        <label for="Motel">Мотель</label>
+        </li>
+        <li>
+        <input class="filter-input-checkbox" type="checkbox" name="Apartamenty"  id="Apartamenty">
+        <label for="Apartamenty">Апартаменты</label>
+          </li>
+        </ul>
         </div>
-        <div class="half-width">
-            <label for="moneycount">Стоймость в сутки (Р):</label>
-            0 <input type="range" id="moneycount" name="moneycount" min="0" max="3000"> 3000
+        <div class="cost-filter">
+            <div class="cost-filter-title">
+              <label>Стоймость в сутки (Р):</label>
+            </div>
+            <div class="cost-control">
+              <label class="cost-from"> ОТ <input type="text" id="from-value" value="0" name="from"></label>
+              <Label class="cost-to"> ДО <input type="text" id="to-value" value="3000" name="to"></Label>
+          </div>
+          <div class="cost-range">
+            <div class="scale">
+              <div class="bar"></div>
+              </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button type="button" name="show">Показать</button>
           </div>
     </section>
     <section>
@@ -58,18 +89,19 @@
         <section class="filters">
           <h2 class="found">Найдено: 3</h2>
          <!-- <form class="filter">-->
-           <p>Сортировка:</p>
-           <p>По цене</p>
-           <p>По типу</p>
-           <p>По рейтингу</p>
-
+           <ul>
+           <li>Сортировка:</li>
+           <li>По цене</li>
+           <li>По типу</li>
+           <li>По рейтингу</li>
+          </ul>
           </section>
         <section class="hotel">
             <h2 hidden class="catalog-list">Список Гостиниц</h2>
             <ul class="catalog-hotel">
                 <li class="catalog-item">
                   <a href="#">
-                        <img src=img/amara.png width=135 height=90 alt="Amara Resort & Spa"></a>
+                        <img src="img/amara.png" width="135" height="90" alt="Amara Resort & Spa"></a>
                       <div class="description">
                         <h3 class="hotel-name">Amara Resort & Spa</h3>
                         <p class="catalog-category"> гостиница от 4000 Р. </p>
@@ -82,7 +114,7 @@
                   </li>
                 <li class="catalog-item">
                   <a href="#">
-                      <img src=img/desert.png width=135 height=90 alt="Desert Quail Inn">
+                      <img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
                     </a>
                     <div class="description">
                         <h3 class="hotel-name">Desert Quail Inn</h3>
@@ -96,7 +128,7 @@
               </li>
                 <li class="catalog-item">
                   <a href="#">
-                      <img src=img/villas.png width=135 height=90 alt="Villas at Poco Diablo">
+                      <img src="img/villas.png" width="135" height="90" alt="Villas at Poco Diablo">
                     </a>
                     <div class="description">
                         <h3 class="hotel-name">Villas at Poco Diablo</h3>
@@ -119,7 +151,7 @@
        <footer class="main-footer">
         <div class="contacts">
           <p>#visitsedona</p>
-          <h2>ТЕЛ: +7(495) 666-01-66
+          <h2>ТЕЛ: +7(495) 666-01-66</h2>
         </div>
         <div class="footer-social">
              <ul>
@@ -149,11 +181,10 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="copyright">
           Website by:
           <a class="footer-copyright" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width=115 height=41 alt="HTML Лого"></a>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Лого"></a>
             </div>
     </footer>
-
->
+  </div>
