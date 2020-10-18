@@ -198,27 +198,41 @@ line-height: 26px;
 .choice-form
 {
   display: flex;
-  width: 1055px;
+  width: 1056px;
   align-items: center;
   padding: 0 72px;
   padding-top: 26px;
   padding-bottom: 7px;
-  width: 1056px;
 }
 /*
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: var(--special);
-}*/
-.filter-input-checkbox + label::before
+}
+*/
+
+.filter-input-checkbox+label::before
 {
   content: "";
-  position: absolute;
-  left: -42px;
-  top: 0;
-  width: 16px;
-  height: 16px;
+  /*left: -42px;*/
+  /*top: 0;*/
+  width: 26px;
+  height: 23px;
   border: 2px solid var(--basic-white);
+}
+
+.filter-option
+{
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+.filter-option label
+{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 .Infrastructure h3, .Type-of-housing h3
 {
@@ -226,6 +240,10 @@ line-height: 26px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 25px;
+}
+.Infrastructure
+{
+  width: 256px;
 }
 .choice
 {
@@ -321,7 +339,6 @@ line-height: 26px;
 }
 .choice-form button
 {
-  position: absolute;
   right: 95px;
   bottom: 26px;
   padding: 6px 35px;
@@ -422,9 +439,6 @@ line-height: 26px;
  }
 .filters
 {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto 1fr;
-  gap: 10px;
   padding: 25px 72px;
   align-items: baseline;
 }

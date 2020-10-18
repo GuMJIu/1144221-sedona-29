@@ -31,20 +31,20 @@
     </header>
        <main>
         <section class="choice">
-          <form class="choice-form" action="#" method="GET">
+          <form class="choice-form" action="#" method="get">
     <div class="Infrastructure">
         <h3>Инфраструктура:</h3>
-          <ul class="filter-chech">
+          <ul class="filter-check filter-option">
         <li>
-        <input class="filter-input-checkbox" type="checkbox" name="Бассейн" id="Pool">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Бассейн" id="Pool">
           <label for="Pool">Бассейн</label>
         </li>
         <li>
-        <input class="filter-input-checkbox" type="checkbox" name="Парковка" id="Parking">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Парковка" id="Parking">
           <label for="Parking">Парковка</label>
         </li>
         <li>
-        <input class="filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Wi-Fi" id="Wi-Fi">
           <label for="Wi-Fi">Wi-Fi</label>
         </li>
         </ul>
@@ -53,15 +53,15 @@
         <h3>Тип жилья: </h3>
         <ul>
           <li>
-        <input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
         <label for="hotel">Гостиница</label>
         </li>
         <li>
-        <input class="filter-input-checkbox" type="checkbox" name="Motel" id="Motel">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Motel" id="Motel">
         <label for="Motel">Мотель</label>
         </li>
         <li>
-        <input class="filter-input-checkbox" type="checkbox" name="Apartamenty"  id="Apartamenty">
+        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Apartamenty"  id="Apartamenty">
         <label for="Apartamenty">Апартаменты</label>
           </li>
         </ul>
@@ -89,12 +89,13 @@
         <section class="filters">
           <h2 class="found">Найдено: 3</h2>
          <!-- <form class="filter">-->
+           <p>Сортировка:</p>
            <ul>
-           <li>Сортировка:</li>
            <li>По цене</li>
            <li>По типу</li>
            <li>По рейтингу</li>
           </ul>
+          </section>
           </section>
         <section class="hotel">
             <h2 hidden class="catalog-list">Список Гостиниц</h2>
@@ -151,7 +152,7 @@
        <footer class="main-footer">
         <div class="contacts">
           <p>#visitsedona</p>
-          <h2>ТЕЛ: +7(495) 666-01-66</h2>
+          <h2><a href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a></h2>
         </div>
         <div class="footer-social">
              <ul>
