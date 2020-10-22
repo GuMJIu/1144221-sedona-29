@@ -36,36 +36,45 @@
         <h3>Инфраструктура:</h3>
           <ul class="filter-check filter-option">
         <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Бассейн" id="Pool">
-          <label for="Pool">Бассейн</label>
+        <input class="filter-input-checkbox " type="checkbox" name="Бассейн" id="pool">
+        <span class="check_box"></span>
+        <label for="pool">Бассейн</label>
+
         </li>
         <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Парковка" id="Parking">
-          <label for="Parking">Парковка</label>
+        <input class="filter-input-checkbox" type="checkbox" name="Парковка" id="parking">
+        <span class="check_box"></span>
+        <label for="parking">Парковка</label>
+
         </li>
         <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Wi-Fi" id="Wi-Fi">
-          <label for="Wi-Fi">Wi-Fi</label>
+        <input class="filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+        <span class="check_box"></span>
+        <label for="Wi-Fi">Wi-Fi</label>
         </li>
         </ul>
         </div>
         <div class="Type-of-housing">
         <h3>Тип жилья: </h3>
-        <ul>
+        <ul class="filter-check filter-option">
           <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+        <input class="filter-input-checkbox" type="checkbox" name="Отель" id="hotel">
+        <span class="check_box"></span>
         <label for="hotel">Гостиница</label>
         </li>
         <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Motel" id="Motel">
-        <label for="Motel">Мотель</label>
+        <input class="filter-input-checkbox" type="checkbox" name="Мотель" id="motel">
+        <span class="check_box"></span>
+        <label for="motel">Мотель</label>
         </li>
         <li>
-        <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Apartamenty"  id="Apartamenty">
-        <label for="Apartamenty">Апартаменты</label>
+        <input class="filter-input-checkbox" type="checkbox" name="Аппартаменты"  id="apartamenty">
+        <span class="check_box"></span>
+        <label for="apartamenty">Апартаменты</label>
           </li>
         </ul>
         </div>
+
         <div class="cost-filter">
             <div class="cost-filter-title">
               <label>Стоймость в сутки (Р):</label>
@@ -83,19 +92,29 @@
             </div>
             <button type="button" name="show">Показать</button>
           </div>
+        </form>
     </section>
-    <section>
+    <section class="sort_block">
         <h2 hidden>Гостиницы</h2>
-        <section class="filters">
-          <h2 class="found">Найдено: 3</h2>
-         <!-- <form class="filter">-->
-           <p>Сортировка:</p>
-           <ul>
-           <li>По цене</li>
-           <li>По типу</li>
-           <li>По рейтингу</li>
+        <div class="filters">
+          <h2>Найдено: 3</h2>
+          <div class="sort">
+          <p>Сортировка:</p>
+           <ul class="sort_by">
+           <li><a href="#">По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По рейтингу</a></li>
           </ul>
-          </section>
+          <div class="sort_range">
+            <ul class="sort_range_list">
+              <li>
+                </li>
+                <li>
+                  </li>
+             </ul>
+            </div>
+          </div>
+          </div>
           </section>
         <section class="hotel">
             <h2 hidden class="catalog-list">Список Гостиниц</h2>

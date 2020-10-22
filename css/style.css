@@ -195,45 +195,6 @@ line-height: 26px;
   background: var(--basic-light-blue)
 }
 
-.choice-form
-{
-  display: flex;
-  width: 1056px;
-  align-items: center;
-  padding: 0 72px;
-  padding-top: 26px;
-  padding-bottom: 7px;
-}
-/*
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: var(--special);
-}
-*/
-
-.filter-input-checkbox+label::before
-{
-  content: "";
-  /*left: -42px;*/
-  /*top: 0;*/
-  width: 26px;
-  height: 23px;
-  border: 2px solid var(--basic-white);
-}
-
-.filter-option
-{
-  margin-bottom: 19px;
-  padding-left: 45px;
-}
-
-.filter-option label
-{
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-}
 .Infrastructure h3, .Type-of-housing h3
 {
   font-size: 16px;
@@ -244,6 +205,71 @@ line-height: 26px;
 .Infrastructure
 {
   width: 256px;
+  display: block;
+}
+.Infrastructure label
+{
+  margin-bottom: 25px;
+}
+
+.filter-input-checkbox
+{
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearnce: none;
+  appearance: none;
+}
+.filter-input-checkbox:checked+.check_box
+{
+  background-image: url(../img/checkbox-on.svg);
+}
+.filter-input-checkbox:focus+.check_box
+{
+  background-image: url(../img/checkbox-off.svg);
+}
+.filter-input-checkbox:checked:focus+.check_box
+{
+  background-image: url(../img/checkbox-on.svg);
+}
+.check_box
+{
+  position: absolute;
+  margin-left: -30px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.sort_block
+{
+  align-items: baseline;
+  background: var(--basic-white);
+  border-bottom: 1px solid var(--basic-grey-line);
+  padding: 29px 72px 30px 72px;
+
+}
+.filters
+{
+  display: flex;
+  flex-grow: 1;
+  text-align: left;
+}
+.sort
+{
+  width: 781px;
+  font-size: 12px;
+}
+.sort_by
+{
+  padding-left: 40px;
+}
+.choice-form
+{
+  display: flex;
+  padding: 0 72px;
+  padding-top: 26px;
+  padding-bottom: 7px;
+  width: 1056px;
 }
 .choice
 {
@@ -543,9 +569,8 @@ line-height: 26px;
   outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  max-height: 120px;
-
+  padding: 23px 138px 36px 111px;
+  align-items: center;
   }
 li
 {
@@ -564,6 +589,15 @@ li
 {
   margin-top: 23px;
   margin-bottom: 36px;
+}
+.contacts p
+{
+  margin: 0;
+}
+
+.contacts h2
+{
+  margin: 0;
 }
 .footer-social
 {
@@ -587,6 +621,10 @@ li
   display: block;
 }
 
+.footer-copyright
+{
+  display: block;
+}
 .social-button {
   display: flex;
   align-items: center;
