@@ -195,21 +195,28 @@ line-height: 26px;
   background: var(--basic-light-blue)
 }
 
-.Infrastructure h3, .Type-of-housing h3
+.heder-filter h3
 {
   font-size: 16px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 25px;
 }
-.Infrastructure
+.heder-filter
 {
   width: 256px;
   display: block;
 }
-.Infrastructure label
+.filter-check
 {
+  padding: 0;
+  margin: 0;
+}
+.heder-filter label
+{
+  padding-left: 30px;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .filter-input-checkbox
@@ -234,7 +241,7 @@ line-height: 26px;
 .check_box
 {
   position: absolute;
-  margin-left: -30px;
+  left: 0;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -253,15 +260,65 @@ line-height: 26px;
   display: flex;
   flex-grow: 1;
   text-align: left;
+  align-items: baseline;
 }
+
 .sort
 {
+  display: flex;
   width: 781px;
   font-size: 12px;
 }
+.sort p
+{
+  padding-left: 48px;
+}
 .sort_by
 {
+  display: flex;
   padding-left: 40px;
+}
+.sort_by li
+{
+  padding-left: 41px;
+}
+.sort_by .act
+{
+  text-decoration: none;
+  color: var(--basic-light-blue);
+  border: none;
+  opacity: var(--basic-black);
+}
+
+.sort_by a:hover,
+.sort_by a:focus
+ {
+  color: var(--basic-light-blue);
+}
+.sort_by a
+{
+  opacity: 30%;
+  text-decoration: none;
+  color: var(--basic-black);
+  border-bottom: 1px dotted var(--basic-light-blue);
+}
+
+.sort_range
+{
+  display: flex;
+  flex-grow: 1;
+  margin-left: 400px;
+}
+
+.sort_range_list
+{
+
+  display: flex;
+}
+.arrow:hover
+.arrow:focus
+{
+  color: var(--basic-black);
 }
 .choice-form
 {
@@ -301,7 +358,7 @@ line-height: 26px;
   position: relative;
   margin-bottom: 20px;
   margin-left: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   height: 32px;
 }
@@ -344,7 +401,7 @@ line-height: 26px;
 {
   width: 80%;
   height: 2px;
-  background: #ffffff;
+  background: var(--basic-white);
 }
 .range-toggle
 {
@@ -354,9 +411,9 @@ line-height: 26px;
   width: 4px;
   height: 4px;
   cursor: pointer;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
-  background: #ababab;
+  background: var( --basic-grey);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 .range-toggle-max
@@ -365,12 +422,12 @@ line-height: 26px;
 }
 .choice-form button
 {
-  right: 95px;
-  bottom: 26px;
+  margin-top: 29px;
+  margin-left: 85px;
   padding: 6px 35px;
   text-transform: uppercase;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: var(--basic-white);
+  border: 2px solid var(--basic-white);
   background: none;
   font-size: 14px;
   line-height: 20px;
@@ -463,16 +520,10 @@ line-height: 26px;
   display: flex;
   padding: 25px 72px;
  }
-.filters
-{
-  padding: 25px 72px;
-  align-items: baseline;
-}
 
 .description
 {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+  margin-left: 29px;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -486,16 +537,19 @@ line-height: 26px;
 {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .catalog-category
 {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
 }
 .rating
 {
   padding: 0;
+  padding-top: 60px;
   margin: 0;
 }
 .catalog-button {
@@ -548,8 +602,8 @@ line-height: 26px;
   margin: 0;
   padding: 40px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #766357;
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -565,15 +619,15 @@ line-height: 26px;
 
 .main-footer
 {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 23px 138px 36px 111px;
+  display: flex;
   align-items: center;
-  }
+  justify-content: space-between;
+  padding: 23px 138px 36px 111px;
+}
+
 li
 {
+  position: relative;
   list-style-type: none;
 }
 
@@ -587,8 +641,7 @@ li
 
 .contacts
 {
-  margin-top: 23px;
-  margin-bottom: 36px;
+
 }
 .contacts p
 {
@@ -602,7 +655,6 @@ li
 .footer-social
 {
   align-items: center;
-  margin-top: 36px;
   }
 .footer-social ul
  {
@@ -620,7 +672,10 @@ li
   font-size: 14px;
   display: block;
 }
-
+.img
+{
+  display: block;
+}
 .footer-copyright
 {
   display: block;
