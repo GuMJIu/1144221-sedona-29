@@ -266,7 +266,6 @@ line-height: 26px;
 .sort
 {
   display: flex;
-  width: 781px;
   font-size: 12px;
 }
 .sort p
@@ -295,6 +294,12 @@ line-height: 26px;
  {
   color: var(--basic-light-blue);
 }
+.sort_by a:checked,
+.sort_by a:focus
+{
+  color: var(--basic-black);
+  opacity: 0;
+}
 .sort_by a
 {
   opacity: 30%;
@@ -319,6 +324,18 @@ line-height: 26px;
 .arrow:focus
 {
   color: var(--basic-black);
+}
+.stars
+{
+  display: flex;
+  width: 90px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  }
+.star
+{
+  background-repeat: space;
+
 }
 .choice-form
 {
@@ -576,6 +593,8 @@ line-height: 26px;
   line-height: 21px;
   color: var(--basic-white);
   text-align:  center;
+  padding: 3px 17px;
+  text-decoration: none;
 }
 
 .button-reservation
@@ -589,6 +608,8 @@ line-height: 26px;
   line-height: 21px;
   color: var(--basic-white);
   text-align: center;
+  padding: 3px 17px;
+  text-decoration: none;
 }
 
 .offer
