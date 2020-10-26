@@ -325,16 +325,29 @@ line-height: 26px;
 {
   color: var(--basic-black);
 }
-.stars
+.star-4
 {
-  display: flex;
-  width: 90px;
-  height: 17px;
-  background-image: url(../img/star.svg);
-  }
+  width: 92px;
+
+}
+
+.star-3
+{
+  width: 70px;
+
+}
+.star-2
+{
+  width: 40px;
+
+}
 .star
 {
+  display: flex;
+  height: 17px;
+  background-image: url(../img/star.svg);
   background-repeat: space;
+  align-items: flex-end;
 
 }
 .choice-form
@@ -530,6 +543,7 @@ line-height: 26px;
 {
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid var(--basic-grey-line);
 }
 
 .catalog-item
@@ -545,7 +559,6 @@ line-height: 26px;
   flex-wrap: wrap;
   flex-grow: 1;
   display: block;
-  border-bottom: 1px solid var(--basic-grey-line);
   width: 781px;
   min-height: 100px;
 
