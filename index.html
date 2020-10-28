@@ -34,7 +34,7 @@
         <img class="main-text-logo" src="img/welcome.png" width="456" height="350" alt="Тескт фон">
       </div>
       <div>
-        <img class="" src="img/Shape.svg" width="1200" height="57" alt="треугольник">
+        <img class="" src="img/welcomedown.svg" width="1200" height="57" alt="треугольник">
       </div>
     </section>
     <main>
@@ -142,18 +142,22 @@
         <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшее предложение гостиниц с Седоне<br></p>
-          <a class="search" href="#">Поиск Гостиницы в Седоне</a>
-          <!--ссылка на выплывающее окно-->
-        <section class="modal modal-in">
-          <label for="datein">Дата заезда</label>
-          <input type="date" name="datein"><br>
-          <label for="dateout">Дата выезда</label>
-          <input type="date" name="dateout"><br>
-          <label for="number">Взрослые:</label>
-          <input type="number" name="adult" value="1"><br>
-          <label for="number">Дети:</label>
-          <input type="number" name="children" value="1" />
-        </section>
+        <a class="search" href="#">Поиск Гостиницы в Седоне</a>
+        <script>
+          const link = document.querySelector(".search");
+          const popup = document.querySelector(".modal-in");
+          const close = document.querySelector("modal-close");
+
+          link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+          });
+
+          close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          });
+        </script>
 
       </div>
       <div class="map">
@@ -205,6 +209,16 @@
     </footer>
   </div>
 
+  <section class="modal modal-in">
+    <label for="datein">Дата заезда</label>
+    <input type="date" name="datein"><br>
+    <label for="dateout">Дата выезда</label>
+    <input type="date" name="dateout"><br>
+    <label for="number">Взрослые:</label>
+    <input type="number" name="adult" value="1"><br>
+    <label for="number">Дети:</label>
+    <input type="number" name="children" value="1" />
+  </section>
 </body>
 
 

@@ -212,6 +212,10 @@ line-height: 26px;
   padding: 0;
   margin: 0;
 }
+.filter-option li
+{
+  margin-bottom: 25px;
+}
 .heder-filter label
 {
   padding-left: 30px;
@@ -569,6 +573,11 @@ line-height: 26px;
   margin: 0;
   margin-bottom: 10px;
 }
+.hotel-name a
+{
+  text-decoration: none;
+  color: var(--basic-black);
+}
 
 .catalog-category
 {
@@ -746,6 +755,7 @@ li
 
 .modal
 {
+ display: none;
  width: 300px;
  height: 50px;
  text-align: center;
@@ -753,4 +763,8 @@ li
  border: 3px solid #0000cc;
  border-radius: 10px;
  color: #0000cc;
+}
+.modal-show
+{
+  display: block;
 }
