@@ -765,26 +765,25 @@ li
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.modal-in
+{
+  display: flex;
+}
 .modal
 {
  width: 568px;
  height: 395px;
- text-align: center;
  left: 0;
  right: 0;
  margin: auto;
  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
  background-color: var(--basic-white);
- display: flex;
- flex-grow: 1;
- fle
- }
-.modal label
-{
-  display: flex;
-}
+ display: grid;
 
+ }
+ .arrival
+ {
+ }
 
 /*.modal-show
 {
