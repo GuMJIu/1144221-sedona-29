@@ -165,7 +165,9 @@
           <div class="arrival">
           <label for="datein">Дата заезда:
             <a class="date" href="#">
-              <span class="icon-calendar"></span>
+              <span class="icon-calendar">
+
+              </span>
             </a>
           </label>
           <input type="text" name="datein" value="24 апреля 2017">
@@ -173,15 +175,38 @@
           <div class="departure">
           <label for="dateout">Дата выезда:
             <a class="date" href="#">
-              <span class="icon-calendar"></span>
+              <span class="icon-calendar">
+
+              </span>
+              </a>
           </label>
           <input type="text" name="dateout" value="4 июля 2017">
           </div>
-          <div>
-          <label for="number">Взрослые:</label>
-          <input type="number" name="adult" value="1">
-          <label for="number">Дети:</label>
-          <input type="number" name="children" value="1" />
+          <div class="amount">
+          <label for="amount-adult">Взрослые:</label>
+          <button type="button" name="adult-minus">
+            <span class="icon-minus">
+
+            </span>
+          </button>
+            <input type="text" name="amount-adult" value="2" id="amount-adult">
+            <button type="button" name="adult-plus">
+              <span class="icon-pus">
+
+              </span>
+              </button>
+          <label for="amount-children">Дети:</label>
+          <button type="button" name="children-minus">
+            <span class="icon-minus">
+
+            </span>
+            </button>
+            <input type="text" name="amount-children" value="0" id="amount-children">
+            <button type="button" name="children-plus">
+              <span class="icon-pus">
+
+              </span>
+              </button>
         </div>
         </section>
       </div>

@@ -57,6 +57,7 @@ body
   margin: 0;
   padding: 0;
   width: 1200px;
+  text-transform: uppercase;
 
 }
 
@@ -779,14 +780,27 @@ li
  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
  background-color: var(--basic-white);
  display: grid;
-
+ box-sizing: border-box;
+ padding: 55px;
  }
- .arrival
+
+ .modal input
  {
+  text-transform: uppercase;
+  border: none;
+ }
+ .amount
+ {
+display: flex;
+}
+
+ .amount input
+ {
+   width: 37px;
  }
 
-/*.modal-show
-{
-  display: block;
-}
-*/
+ .amount label
+ {
+text-decoration: none;
+ }
+
