@@ -768,7 +768,7 @@ li
 }
 .modal-in
 {
-  display: flex;
+
 }
 .modal
 {
@@ -782,12 +782,14 @@ li
  display: grid;
  box-sizing: border-box;
  padding: 55px;
+ font-weight: bold;
  }
 
  .modal input
  {
   text-transform: uppercase;
   border: none;
+  font-weight: bold;
  }
  .amount
  {
@@ -803,4 +805,20 @@ display: flex;
  {
 text-decoration: none;
  }
+
+.button-search
+{
+  width: 458px;
+  height: 58px;
+}
+
+.button-find
+{
+
+  background: var(--basic-light-blue);
+  color: var(--basic-white);
+  text-align:  center;
+  text-decoration: none;
+}
+
 
