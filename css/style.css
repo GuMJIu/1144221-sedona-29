@@ -15,6 +15,11 @@
   url("../fonts/ptsans.woff") format('woff');
 
 }
+a
+ {
+   text-decoration: none
+ }
+
 :root {
   --basic-red: #FF0000;
   --basic-black: #000000;
@@ -33,7 +38,10 @@
 
   --special-black: #231F20;
 }
-
+*, *::before, *::after
+{
+  box-sizing: border-box;
+}
 .page-body
 {
   max-width: 1200px;
@@ -55,7 +63,6 @@ body
   text-transform: uppercase;
   background-color: var(--basic-white);
   margin: 0;
-  padding: 0;
   width: 1200px;
   text-transform: uppercase;
 
@@ -349,7 +356,6 @@ line-height: 26px;
 }
 .star
 {
-  display: flex;
   height: 17px;
   background-image: url(../img/star.svg);
   background-repeat: space;
@@ -415,7 +421,6 @@ line-height: 26px;
 }
 .cost-control label
 {
-  display: inline-block;
   vertical-align: middle;
   height: 34px;
   width: 90px;
@@ -439,6 +444,18 @@ line-height: 26px;
   width: 80%;
   height: 2px;
   background: var(--basic-white);
+}
+label.cost-control::before
+{
+content: "";
+width: 2px;
+height: 22px;
+background-color: var(--basic-white);
+display: block;
+position: absolute;
+right: 0;
+top: 8px;
+
 }
 .range-toggle
 {
@@ -565,11 +582,19 @@ line-height: 26px;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  display: block;
   width: 781px;
   min-height: 100px;
+  justify-content: space-between;
 }
 
+.one
+{
+  display: flex;
+}
+.more
+{
+  margin-right: 6px;
+}
 .more a
 {
   display: block;
@@ -617,11 +642,10 @@ line-height: 26px;
 .map
 {
   display: block;
-  background: url("../img/map.png");
   width: 1199px;
   height: 594px;
   position: relative;
-  }
+}
 .button-more
 {
   width: 110px;
@@ -766,34 +790,85 @@ li
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.modal-in
+.calendar
 {
-
+position: relative;
+}
+.calendar-icon
+{
+  position: absolute;
+  right: 0;
 }
 .modal
 {
  width: 568px;
- height: 395px;
  left: 0;
  right: 0;
  margin: auto;
  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
  background-color: var(--basic-white);
- display: grid;
  box-sizing: border-box;
  padding: 55px;
  font-weight: bold;
+ position: absolute;
  }
-
+.arrival label
+{
+  min-width: 100px;
+  margin-right: 12px;
+  align-items: center;
+}
  .modal input
  {
   text-transform: uppercase;
   border: none;
+  font-style: normal;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 6px 13px;
+  width: 100%;
+  box-sizing: border-box;
+ }
+
+ .arrival
+ {
+ display: flex;
+ margin-bottom: 29px;
+ align-items: center;
+ }
+
+ .count-button
+ {
+   width: 38px;
+   height: 38px;
+   display: block;
+   padding: 0;
+   border: 0;
+}
+ .count
+ {
+   display: flex;
+   align-items: center;
+ }
+ .count-adult label
+ {
+  min-width: 100px;
+  margin-right: 12px;
+ }
+
+ .cound-children label
+ {
+   min-width: 50px;
+   margin-right: 15px;
  }
  .amount
  {
+   margin-bottom: 40px;
 display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
 }
 
  .amount input
@@ -808,17 +883,21 @@ text-decoration: none;
 
 .button-search
 {
-  width: 458px;
-  height: 58px;
 }
 
 .button-find
 {
-
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   background: var(--basic-light-blue);
   color: var(--basic-white);
   text-align:  center;
   text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 
