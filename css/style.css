@@ -1,18 +1,18 @@
 @font-face
 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
+  font-weight: normal;
   src:
-  url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans-regular.woff") format("woff");
 }
 @font-face
 {
-  font-family: 'PT Sans';
-  font-style: bold;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: normal;
   src:
-  url("../fonts/ptsans.woff2") format('woff2'),
-  url("../fonts/ptsans.woff") format('woff');
+  url("../fonts/ptsans-bold.woff") format('woff');
 
 }
 a
@@ -35,6 +35,7 @@ a
   --basic-grey: #A9A9A9;
   --basic-grey-line: #E5E5E5;
   --basic-dark-grey: #666666;
+  --basic-grey-fon: #F2F2F2;
 
   --special-black: #231F20;
 }
@@ -50,13 +51,12 @@ a
   align-content: center;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 body
 {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;;
+ font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
@@ -109,8 +109,10 @@ body
 {
   text-decoration: none;
   color: var(--basic-black);
-  font-size: 14px;
-  font-weight: bold;
+  font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
 }
 .site-navigation li
 {
@@ -141,10 +143,17 @@ body
 .go-to
 {
   font-style: normal;
-  font-weight: bold;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
   text-align: center;
+  color: var(--basic-black);
 }
-
+.go-to:hover
+.go-to:focus
+{
+  color: var(--basic-light-blue);
+}
 .h1
 {
 color: var(--basic-black);
@@ -152,21 +161,49 @@ font-size: 21px;
 font-weight: bold;
 line-height: 26px;
 }
+.h2
+{
+  font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 21px;
+}
 
+.p
+{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+}
 .description-main
 {
   text-align: center;
   width: 1200px;
-  padding: 50px 0;
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
+.description-text h2
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.description-text p
+{
+  margin: 0;
+  padding-top: 25px;
+}
+.item p
+{
+  padding-top: 5px;
 }
 .features-left
 {
   width: 400px;
   height: 256px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
   background-color: var(--basic-light-blue);
 }
 
@@ -176,7 +213,7 @@ line-height: 26px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 49px
+  margin-top: 51px
 }
 .features-right
 {
@@ -195,7 +232,7 @@ line-height: 26px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 49px
+  margin-top: 46px
 }
 .rectangle
 {
@@ -223,11 +260,11 @@ line-height: 26px;
 }
 .filter-option li
 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .heder-filter label
 {
-  padding-left: 30px;
+  padding-left: 40px;
   margin-bottom: 25px;
   position: relative;
 }
@@ -265,7 +302,7 @@ line-height: 26px;
   align-items: baseline;
   background: var(--basic-white);
   border-bottom: 1px solid var(--basic-grey-line);
-  padding: 29px 72px 30px 72px;
+  padding: 10px 72px 0px 72px;
 
 }
 .filters
@@ -290,9 +327,13 @@ line-height: 26px;
   display: flex;
   padding-left: 40px;
 }
-.sort_by li
+.sort_by li:nth-child(2)
 {
-  padding-left: 41px;
+  padding-left: 32px;
+}
+.sort_by li:nth-child(3)
+{
+  padding-left: 34px;
 }
 .sort_by .act
 {
@@ -333,6 +374,10 @@ line-height: 26px;
 
   display: flex;
 }
+.arrow
+{
+  padding-left: 10px;
+}
 .arrow:hover
 .arrow:focus
 {
@@ -369,7 +414,6 @@ line-height: 26px;
   padding: 0 72px;
   padding-top: 26px;
   padding-bottom: 7px;
-  width: 1056px;
 }
 .choice
 {
@@ -393,14 +437,13 @@ line-height: 26px;
   position: relative;
   box-sizing: border-box;
   width: 528px;
-  padding-left: 200px;
+  padding-left: 227px;
   display: block;
 }
 .cost-control
 {
   position: relative;
   margin-bottom: 20px;
-  margin-left: 10px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   height: 32px;
@@ -417,7 +460,7 @@ line-height: 26px;
 }
 .cost-control .cost-from
  {
-  padding-left: 52px;
+  padding-left: 65px;
   position: relative;
 }
 .cost-control label
@@ -428,7 +471,7 @@ line-height: 26px;
 }
 .cost-control .cost-to
 {
-  padding-left: 36px;
+  padding-left: 70px;
 }
 .cost-range
 {
@@ -462,18 +505,17 @@ right: 0;
 {
   position: absolute;
   top: -9px;
-  left: 10px;
   width: 4px;
   height: 4px;
   cursor: pointer;
-  border: 8px solid var(--basic-white);
+  border: 10px solid var(--basic-white);
   border-radius: 50%;
   background: var( --basic-grey);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 .range-toggle-max
 {
-  left: 80%;
+  left: 84%;
 }
 .choice-form button
 {
@@ -553,7 +595,6 @@ right: 0;
 { display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
-  margin: 0;
 }
 .item-small
 {
@@ -562,7 +603,8 @@ right: 0;
 }
 .item-small p
 {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .catalog-hotel
 {
@@ -573,9 +615,19 @@ right: 0;
 .catalog-item
 {
   display: flex;
-  padding: 25px 72px;
   border-bottom: 1px solid var(--basic-grey-line);
+  margin-top: 30px;
+  padding-left: 65px;
  }
+
+.catalog-item li:nth-child(2)
+ {
+  margin-top: 50px;
+ }
+.catalog-item li:nth-child(3)
+ {
+margin-top: 60px;
+   }
 
 .description
 {
@@ -613,6 +665,10 @@ right: 0;
 
 .hotel-name
 {
+  font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -679,13 +735,15 @@ right: 0;
 
 .offer
 {
+
+  margin-top: 80px;
   text-align: center;
   padding: 0 auto;
 }
 .offer a
 {
   display: block;
-  margin: 0;
+  margin-top: 52px;
   padding: 40px;
   text-decoration: none;
   color: var(--basic-white);
