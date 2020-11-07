@@ -410,7 +410,7 @@ body {
 }
 
 .cost-filter-title {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -593,7 +593,7 @@ body {
     border-bottom: 1px solid var(--basic-grey-line);
     margin-top: 22px;
     margin-bottom: 24px;
-    padding: 0 0 24px 73px;
+    padding: 0 0 23px 73px;
 }
 
 .catalog-item li:nth-child(2) {
@@ -606,6 +606,10 @@ body {
 
 .catalog-item img {
     margin-top: 5px;
+}
+
+.catalog-item:last-child {
+    margin: 0;
 }
 
 .description {
@@ -631,7 +635,7 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-dark-blue);
     padding: 2px 17px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .reservation a {
@@ -639,7 +643,7 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-light-brown);
     padding: 2px 17px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .hotel-name {
